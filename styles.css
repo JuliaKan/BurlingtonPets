@@ -1,0 +1,56 @@
+body{
+    background-color:rgb(21, 189, 231);
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poor Story', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Neucha', cursive;
+}
+li {
+    list-style-type: none;
+}
+#content {
+    background-color: white;
+    width: 80%;
+    margin-top: 0;
+}
+
+#lotsapets{
+    width:500px;
+    border-radius:10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffc78f;
+    color: #ef576f;
+    margin-top: 0;
+    padding: 8px;
+    overflow: hidden;
+    font-family: 'Poor Story', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Neucha', cursive;
+    font-size: 17px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Poor Story', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Neucha', cursive;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:#8b4a66;
+    color: white;
+}
