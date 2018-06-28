@@ -13,6 +13,8 @@
             <a href="index.html">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <button id="authorize-button" style="display: none;">Authorize</button>
+            <button id="signout-button" style="display: none;">Sign Out</button>
         </div>
     </div>
     <div id="header">
@@ -42,7 +44,7 @@
     </div>
     <div id="pageCore">
         <div id="content">
-            <div id="habitat">
+            <!-- <div id="habitat">
                 <h1>Habitat</h1>
                 <li>Aquariums</li>
                 <li>Beds</li>
@@ -63,14 +65,15 @@
                 <li>Collars</li>
                 <li>Leashes</li>
                 <li>Toys</li>
-            </div>
+            </div> -->
             <div id="crumbTrail"></div>
         </div>
         <div >
             <img id=lotsapets src="images/lotsapets.jpg">
         </div>
     </div>
-    
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 </body>
 
 </html>
