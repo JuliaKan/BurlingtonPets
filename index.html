@@ -3,7 +3,7 @@
 
 <head>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="bpets.js"></script>
+    
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
@@ -15,6 +15,8 @@
             <a href="index.html">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <button id="authorize-button" style="display: none;">Authorize</button>
+            <button id="signout-button" style="display: none;">Sign Out</button>
         </div>
     </div>
     <div id="header">
@@ -47,40 +49,14 @@
     </div>
     <div id="pageCore">
         <div id="content">
-            <div id="habitat">
-                <h1>Habitat</h1>
-                <li>Aquariums</li>
-                <li>Beds</li>
-                <li>Crates</li>
-                <li>Kennels</li>
-                <li>Water</li>
-            </div>
-            <div id="consumables">
-                <h1>Consumables</h1>
-                <li>Chews</li>
-                <li>Food</li>
-                <li>Natural Foods</li>
-                <li>Treats</li>
-            </div>
-            <div id="accessories">
-                <h1>Accessories</h1>
-                <li>Coats</li>
-                <li>Collars</li>
-                <li>Leashes</li>
-                <li>Toys</li>
-            </div>
+           
             <div id="crumbTrail"></div>
         </div>
         
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div>
-            <img id="lotsapets" src="images/lotsapets.jpg">
-                
-            </div>
+    <script src="bpets.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
 </body>
 
 </html>
