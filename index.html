@@ -1,36 +1,76 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Neucha%7CPoor+Story%7CShadows+Into+Light" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="bpets.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
 
 <body>
-  <div id="content">
-    <nav>
-      <ul class="topnav">
-        <li>
-          <a class="active" href="#home">Dogs</a>
-        </li>
-        <li>
-          <a href="#about">Cats</a>
-        </li>
-        <li>
-          <a href="#contact">Fish</a>
-        </li>
-        <li>
-          <a href="#reviews">Birds</a>
-        </li>
-        <li>
-          <a href="#mediakit">Reptiles</a>
-        </li>
-        <li>
-          <a href="#mediakit">Small Pets</a>
-        </li>
-      </ul>
-    </nav>
-    <img id=lotsapets src="images/lotsapets.jpg">
-  </div>
+    <div id="topNav">
+        <div id="topNavLinks">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div id="header">
+        <a href="moms.html">
+            <img src="./images/logo.png" id="myLogo">
+        </a>
+        <img src="./images/actionDog.jpeg" id="actionDog">
+        <img src="./images/perchBird.jpeg" id="actionDog">
+        <img src="./images/catToy.jpg" id="actionDog">
+    </div>
+    <div id="greenNav">
+        <a id="dog" class="barAnimals">Dogs
+            <img src="./images/dog.png" onclick="holdState('dog')">
+        </a>
+        <a id="cat" class="barAnimals">Cats
+            <img src="./images/cat.png" onclick="holdState('cat')">
+        </a>
+        <a id="bird" class="barAnimals">Birds
+            <img src="./images/bird.png" onclick="holdState('bird')">
+        </a>
+        <a id="reptile" class="barAnimals">Reptiles
+            <img src="./images/reptile.png" onclick="holdState('reptile')">
+        </a>
+        <a id="fish" class="barAnimals">Fish
+            <img src="./images/fish.png" onclick="holdState('fish')">
+        </a>
+    </div>
+    <div id="pageCore">
+        <div id="content">
+            <div id="habitat">
+                <h1>Habitat</h1>
+                <li>Aquariums</li>
+                <li>Beds</li>
+                <li>Crates</li>
+                <li>Kennels</li>
+                <li>Water</li>
+            </div>
+            <div id="consumables">
+                <h1>Consumables</h1>
+                <li>Chews</li>
+                <li>Food</li>
+                <li>Natural Foods</li>
+                <li>Treats</li>
+            </div>
+            <div id="accessories">
+                <h1>Accessories</h1>
+                <li>Coats</li>
+                <li>Collars</li>
+                <li>Leashes</li>
+                <li>Toys</li>
+            </div>
+            <div id="crumbTrail"></div>
+        </div>
+        <div >
+            <img id=lotsapets src="images/lotsapets.jpg">
+        </div>
+    </div>
+    
 </body>
-<html>
+
+</html>

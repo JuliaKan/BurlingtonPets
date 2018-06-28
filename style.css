@@ -96,7 +96,7 @@ height:max;
 
 #pageCore {
     display:flex;
-    align-content:flex-start;
+    align-content:space-between;
     width:79%;
 }
 
@@ -113,9 +113,7 @@ height:max;
     
 }
 
-#content div {
-    margin-left: 20px;
-}
+
 
 
 #subheader {
