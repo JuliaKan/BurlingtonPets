@@ -1,0 +1,155 @@
+[
+  {
+    "Category": "Aquariums",
+    "Department": "Habitat",
+    "Cat": "",
+    "Dogs": "",
+    "Bird": "",
+    "Fish": "x",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Beds",
+    "Department": "Habitat",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  },
+  {
+    "Category": "Crates",
+    "Department": "Habitat",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  },
+  {
+    "Category": "Kennels",
+    "Department": "Habitat",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  },
+  {
+    "Category": "Raw Water",
+    "Department": "Habitat",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "x",
+    "Fish": "x",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Chews",
+    "Department": "Food & Treats",
+    "Cat": "",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  },
+  {
+    "Category": "Small Pet Food",
+    "Department": "Food & Treats",
+    "Cat": "",
+    "Dogs": "",
+    "Bird": "x",
+    "Fish": "x",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Dog Food",
+    "Department": "Food & Treats",
+    "Cat": "",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  },
+  {
+    "Category": "Dry Cat Food",
+    "Department": "Food & Treats",
+    "Cat": "x",
+    "Dogs": "",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  },
+  {
+    "Category": "Wet Cat Food",
+    "Department": "Food & Treats",
+    "Cat": "x",
+    "Dogs": "",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  },
+  {
+    "Category": "Natural Foods",
+    "Department": "Food & Treats",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "x",
+    "Fish": "x",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Treats",
+    "Department": "Food & Treats",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "x",
+    "Fish": "x",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Coats",
+    "Department": "Accessories",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Collars",
+    "Department": "Accessories",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Leashes",
+    "Department": "Accessories",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Toys",
+    "Department": "Accessories",
+    "Cat": "x",
+    "Dogs": "x",
+    "Bird": "x",
+    "Fish": "",
+    "Reptile": "x"
+  },
+  {
+    "Category": "Whistles",
+    "Department": "Accessories",
+    "Cat": "",
+    "Dogs": "x",
+    "Bird": "",
+    "Fish": "",
+    "Reptile": ""
+  }
+]
