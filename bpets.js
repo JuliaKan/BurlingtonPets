@@ -17,7 +17,7 @@ function holdState(animal) {
     animalMenuBarElement.selected = false;
   }
   else {
-    listMajors(animal)
+    clearCategories(animal)
     dropDownContectElements.setAttribute("style", "display: flex;")
     animalMenuBarElement.setAttribute("style", "border: 5px solid black")
     animalMenuBarElement.selected = true;
@@ -75,7 +75,6 @@ function updateSigninStatus(isSignedIn) {
   if (isSignedIn) {
     authorizeButton.style.display = 'none';
     signoutButton.style.display = 'block';
-    listMajors();
   } else {
     authorizeButton.style.display = 'block';
     signoutButton.style.display = 'none';
@@ -108,10 +107,7 @@ function listMajors(currentAnimal) {
   gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: '1a6lR7xANcqYZBblKDcJ-Nn9ZRhZZhuqAd9gwv6tfQKg', range: 'Categories!A2:E',
   }).then(function (response) {
-    var elements = document.getElementById('content').getElementsByClassName('categories');
-    while (elements.length > 0) {
-      elements[0].parentNode.removeChild(elements[0]);
-    }
+    
     var range = response.result;
     let animCol
     switch (currentAnimal) {
@@ -154,6 +150,18 @@ function listMajors(currentAnimal) {
     appendHeading('Error: ' + response.result.error.message);
   });
 }
+function clearCategories(animal) {
+  var elements = document.getElementById('content').getElementsByClassName('categories');
+  while (elements.length > 0) {
+    elements[0].parentNode.removeChild(elements[0]);
+  }
+  var departs = document.getElementById('content').getElementsByClassName('department');
+  while (departs.length > 0) {
+    departs[0].parentNode.removeChild(departs[0]);
+  }
+  listMajors(animal)
+}
+
 /**
  * Append a pre element to the body containing the given message
  * as its text node. Used to display the results of the API call.
@@ -170,6 +178,7 @@ function listMajors(currentAnimal) {
 function appendHeading(message) {
   var pre = document.getElementById('content');
   var para = document.createElement("p");
+  para.classList.add('department');
   para.innerHTML = message;
   pre.appendChild(para);
 }
