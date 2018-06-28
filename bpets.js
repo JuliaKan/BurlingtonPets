@@ -3,9 +3,9 @@
 
 function holdState(animal) {
 
-    let selectedImg = document.getElementById(animal)
+    let animalMenuBarElement = document.getElementById(animal)
     let animalClass = document.getElementsByClassName('barAnimals')
-    let dropDown = document.getElementById("content")
+    let dropDownContectElements = document.getElementById("content")
 
 
 
@@ -15,15 +15,15 @@ function holdState(animal) {
 
     }
 
-    if (selectedImg.selected === true) {
-        dropDown.setAttribute("style", "display: none;")
-        selectedImg.setAttribute("style", "border: 0px solid black")
-        selectedImg.selected = false;
+    if (animalMenuBarElement.selected === true) {
+        dropDownContectElements.setAttribute("style", "display: none;")
+        animalMenuBarElement.setAttribute("style", "border: 0px solid black")
+        animalMenuBarElement.selected = false;
     }
     else {
-        dropDown.setAttribute("style", "display: flex;")
-        selectedImg.setAttribute("style", "border: 5px solid black")
-        selectedImg.selected = true;
+        dropDownContectElements.setAttribute("style", "display: flex;")
+        animalMenuBarElement.setAttribute("style", "border: 5px solid black")
+        animalMenuBarElement.selected = true;
     }
 
     
