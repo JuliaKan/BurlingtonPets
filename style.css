@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Courgette', cursive;
     color:white;
 
 }
@@ -73,7 +73,7 @@ a {
     height: 80px;
     display: flex;
     justify-content: space-around;
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Courgette', cursive;
 
     
 }
@@ -158,8 +158,29 @@ h2{
     font-size:50px;
     margin:0px;
 }
+#dog{
+    display:flex;
+    flex-direction:column;
+}
+#cat{
+    display:flex;
+    flex-direction:column;
+}
+#bird{
+    display:flex;
+    flex-direction:column;
+}
+#reptile{
+    display:flex;
+    flex-direction:column;
+}
+#fish{
+    display:flex;
+    flex-direction:column;
+}
 
 /*background-image:url("images/puppy-hug.jpg");
     /*photo source http://www.dodlive.mil/2015/10/15/what-pet-owners-should-know-when-movingdeploying*/
 
 
+   /*dog background: https://pixabay.com/en/flatcoated-retriever-dog-basket-3251959/
