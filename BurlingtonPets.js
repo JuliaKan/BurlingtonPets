@@ -124,9 +124,6 @@ var menuInventory = [
 var myJSON;
 
 function holdState(animal) {
-
- 
-
   let animalMenuBarElement = document.getElementById(animal)
   let animalClass = document.getElementsByClassName('barAnimals')
   let dropDownContectElements = document.getElementById("content")
@@ -143,6 +140,7 @@ function holdState(animal) {
   }
   else {
     myJSON = JSON.stringify(menuInventory);
+    dropDownContectElements.innerHTML = myJSON
     dropDownContectElements.setAttribute("style", "display: flex;")
     animalMenuBarElement.setAttribute("style", "border: 5px solid black")
     animalMenuBarElement.selected = true;
