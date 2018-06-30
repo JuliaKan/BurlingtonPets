@@ -167,7 +167,7 @@ function holdState(animal) {
     clearCategories(animal)
     // dropDownContectElements.innerHTML = petCategories[animCol - 1][['Category']]
     //console.log(petCategories[animCol - 1]['Category'][1])
-    
+
     var currentPet = petCategories[animCol - 1]
 
 
@@ -216,8 +216,12 @@ function holdState(animal) {
 
     var rect = animalMenuBarElement.getBoundingClientRect();
     console.log(rect.top, rect.right, rect.bottom, rect.left);
+    var width = dropDownContectElements.offsetWidth;
+    //Centered under navitem assuming 18% width of .baritem
+    let marginLeft = rect.left + (((document.body.clientWidth * .18) - 154) / 2)
+    console.log(width)
 
-    dropDownContectElements.setAttribute("style", "display: flex; margin-left: "+(rect.left-170)+"px")
+    dropDownContectElements.setAttribute("style", "display: flex; margin-left: " + (marginLeft) + "px")
     animalMenuBarElement.setAttribute("style", "border: 5px solid black")
     animalMenuBarElement.selected = true;
   }
@@ -241,7 +245,7 @@ function appendItem(message) {
   bItem.classList.add("categories")
   bItem.innerHTML = message;
   pre.appendChild(bItem);
-  
+
 }
 
 function applyHeadingStyle() {
