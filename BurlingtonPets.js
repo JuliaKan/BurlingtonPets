@@ -127,7 +127,14 @@ var myJSON;
 
 let currentDepartment
 
+function clearBorders() {
+  let animalClass = document.getElementsByClassName('barAnimals')
+  for (i = 0; i < animalClass.length; i++) {                    ////CLEAR ALL BORDERS
+    animalClass[i].setAttribute("style", "border: 0px")
+  }
+}
 
+let lastAnimal
 
 function holdState(animal) {
   let count = 0
@@ -136,6 +143,11 @@ function holdState(animal) {
   let dropDownContectElements = document.getElementById("content")
   let animCol
   // console.log("Animal is " + animal + "animCol is " + animCol);
+
+  if (lastAnimal != animal && lastAnimal != undefined) {
+    let lastAnimalMenuBarElement = document.getElementById(lastAnimal)
+    lastAnimalMenuBarElement.selected = false;
+  }
 
   switch (animal) {
     case "dog": animCol = 1;
@@ -153,9 +165,7 @@ function holdState(animal) {
     default: console.log("Animal Malfunction! animCol is " + animCol)
   }
 
-  for (i = 0; i < animalClass.length; i++) {                    ////CLEAR ALL BORDERS
-    animalClass[i].setAttribute("style", "border: 0px")
-  }
+  clearBorders()
 
   if (animalMenuBarElement.selected === true) {                 ////If open nav re-click, close and change state
     dropDownContectElements.setAttribute("style", "display: none;")
@@ -209,8 +219,8 @@ function holdState(animal) {
         }
         count++
 
-
-
+        lastAnimal = animal
+        
       }
     });
 
@@ -224,6 +234,12 @@ function holdState(animal) {
     dropDownContectElements.setAttribute("style", "display: flex; margin-left: " + (marginLeft) + "px")
     animalMenuBarElement.setAttribute("style", "border: 5px solid black")
     animalMenuBarElement.selected = true;
+    console.log(document.activeElement)
+    // document.getElementById("topNav").blur();
+    // document.getElementById("greenNav").blur();
+    // document.getElementById("pageCore").blur();
+    document.getElementById("body").blur();
+    console.log("now focus is " + document.activeElement)
   }
   applyHeadingStyle()
   applyCategoryStyle()
